@@ -5,13 +5,15 @@ def newWord(word, wordToGuess, blankWordToGuess):
 
 def wordChecker(userGuess, wordToGuess, blankToGuess):
     x=0
+    letterGuessedCorrectly=False
     for i in word:
         if i == userGuess:
             print('found')
             blankToGuess[x] = userGuess
-        else:
-            print(f'{userGuess} is not in this word!')
+            letterGuessedCorrectly=True
         x+=1
+    if letterGuessedCorrectly == False:
+        print(f'Looks like your guess {userGuess} was wrong')
 
 
 
