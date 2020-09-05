@@ -104,6 +104,7 @@ clear()
 gameOn = True
 guessesLeft=6
 word = input ("Provide a word: ").lower()
+clear()
 wordToGuess= []
 blankToGuess=[]
 newWord(word, wordToGuess, blankToGuess)
