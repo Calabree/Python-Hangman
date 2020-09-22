@@ -1,5 +1,5 @@
 from os import system, name
-
+# this is a test comment
 def newWord(word, wordToGuess, blankWordToGuess):
     wordToGuess=list(word)
     for x in wordToGuess:
